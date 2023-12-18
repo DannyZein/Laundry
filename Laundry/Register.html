@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Sign Up</h1>
+      <form>
+        <div class="txt_field">
+          <input type="text" id="registerName" required >
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="email" id="registerEmail" required >
+          <label>Email</label>
+        </div>
+          <div class="txt_field">
+            <input type="password" id="registerPassword" required >
+            <label>Password</label>
+          </div>
+          <button type="button" id="registerbtn" name="submitData" class="registerbtn">Sign Up</button>
+        <div class="signup_link">
+            Allready have an account? <a href="Login.html">Log in</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script async type="module" src="form.js" defer="defer"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js"></script>
+</html>
